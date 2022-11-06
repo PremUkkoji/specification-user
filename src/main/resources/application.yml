@@ -1,0 +1,19 @@
+server:
+    port: 8080
+
+spring:
+    application:
+        name: userspec
+    datasource:
+        username: 'premukkoji'
+        url: jdbc:postgresql://localhost:5432/userspecdb
+        password: 'root'
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: 'true'
+                globally_quoted_identifiers: true
+        hibernate:
+            ddl-auto: create
+        show-sql: 'true'
